@@ -20,7 +20,6 @@ session_start();
     <link href="css/style.css" rel="stylesheet"> </head>
 
 <body>
-
         <header id="header" class="header-scroll top-header headrom">
             <nav class="navbar navbar-dark">
                 <div class="container">
@@ -67,7 +66,9 @@ session_start();
                 </div>
             </div>
             <div class="inner-page-hero bg-image" data-image-src="images/img/pimg.jpg">
-                <div class="container"> </div>
+                <div class="container"> 
+                <h1 class="inner-text">Our Restaurants</h1>
+                </div>
             </div>
             <div class="result-show">
                 <div class="container">
@@ -76,18 +77,16 @@ session_start();
                 </div>
             </div>
             <section class="restaurants-page">
-                <div class="container">
+                <div class="container">             
                     <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3">
-                        </div>
+                        <!-- <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3">
+                        </div> -->  
                         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-9">
                             <div class="bg-gray restaurant-entry">
                                 <div class="row">
 								<?php $ress= mysqli_query($db,"select * from restaurant");
 									      while($rows=mysqli_fetch_array($ress))
 										  {
-													
-						
 													 echo' <div class="col-sm-12 col-md-12 col-lg-8 text-xs-center text-sm-left">
 															<div class="entry-logo">
 																<a class="img-fluid" href="dishes.php?res_id='.$rows['rs_id'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Food logo"></a>

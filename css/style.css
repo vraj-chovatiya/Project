@@ -1201,6 +1201,15 @@ Steps
 
 /****** featured restaurants block *******/
 
+.restaurants-page .container{
+  /* border: 2px solid grey; */
+  margin: 2rem auto;
+}
+.restaurants-page .container .row{
+  margin-right: -200px;
+  /* margin-left: ; */
+}
+
 .featured-restaurants {
   padding: 100px 0 20px;
   position: relative;
@@ -1588,10 +1597,17 @@ footer li a {
 ============================*/
 
 .inner-page-hero {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
-
+.inner-page-hero .container .inner-text{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 3px blue;
+  font-size: 3.8rem;
+}
 /********* profile banner part ***********/
 
 .profile-banner figure img {
