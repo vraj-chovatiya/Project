@@ -1205,6 +1205,14 @@ Steps
   padding: 100px 0 20px;
   position: relative;
 }
+.featured-restaurants .res-title{
+  /* border-bottom: 1px solid grey; */
+  /* padding-bottom: 10px; */
+  color: black;
+  font-weight: 900px;
+  font-size: 1.8rem;
+  
+}
 
 @media (min-width: 280px) and (max-width: 580px) {
   .featured-restaurants {
