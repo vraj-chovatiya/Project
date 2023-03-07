@@ -32,7 +32,6 @@ session_start();
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
                             <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
-                            
 							<?php
 						if(empty($_SESSION["user_id"]))
 							{
@@ -40,15 +39,11 @@ session_start();
 							  <li class="nav-item"><a href="registration.php" class="nav-link active">Register</a> </li>';
 							}
 						else
-							{
-									
-									
+							{		
 										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
 									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
-
-						?>
-							 
+						?>	 
                         </ul>
                     </div>
                 </div>
@@ -78,7 +73,7 @@ session_start();
             </div>
             <section class="restaurants-page">
                 <div class="container">             
-                    <div class="row">
+                    <div class="row row-2">
                         <!-- <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3">
                         </div> -->  
                         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-9">
@@ -108,20 +103,10 @@ session_start();
 																<!-- end:right info -->
 															</div>';
 										  }
-						
-						
 						?>
-                                    
                                 </div>
-                
                             </div>
-                         
-                            
-                                
-                            </div>
-                          
-                          
-                           
+                        </div>   
                         </div>
                     </div>
                 </div>
@@ -129,8 +114,6 @@ session_start();
        
         <footer class="footer">
             <div class="container">
-                
-              
                 <div class="bottom-footer">
                     <div class="row">
                         <div class="col-xs-12 col-sm-3 payment-options color-gray">

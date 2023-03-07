@@ -5,24 +5,25 @@
 session_start(); 
 error_reporting(0); 
 include("connection/connect.php");  
-if(isset($_POST['submit'] )) 
+if(isset($_POST['submit'])) 
 {
-     if(empty($_POST['firstname']) 
-   	empty($_POST['lastname'])
-		empty($_POST['email'])   
-		empty($_POST['phone'])
-		empty($_POST['password'])
-		empty($_POST['cpassword']) 
-		empty($_POST['cpassword']))
-		{
-			$message = "All fields must be Required!";
-		}
+   //   if(empty($_POST['firstname'])
+   	// empty($_POST['lastname'])
+		// empty($_POST['email'])
+		// empty($_POST['phone'])
+		// empty($_POST['password'])
+		// empty($_POST['cpassword'])
+		// empty($_POST['cpassword'])
+      // )
+		// {
+		// 	$message = "All fields must be Required!";
+		// }
 	else
 	{
 	
-	$check_username= mysqli_query($db, "SELECT username FROM users where username = '".$_POST['username']."' ");
-	$check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."' ");
-		
+	$check_username= mysqli_query($db, "SELECT username FROM users where username = '".$_POST['username']."'");
+	$check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."'");
+   
 
 	
 	if($_POST['password'] != $_POST['cpassword']){  
@@ -59,10 +60,7 @@ if(isset($_POST['submit'] ))
 		 header("refresh:0.1;url=login.php");
     }
 	}
-
 }
-
-
 ?>
 
 
@@ -132,9 +130,9 @@ if(isset($_POST['submit'] ))
                            <div class="widget-body">
                             
 							  <form action="" method="post">
-                                 <div class="row">
+                        <div class="row">
 								  <div class="form-group col-sm-12">
-                                       <label for="exampleInputEmail1">User-Name</label>
+                                       <label for="exampleInputEmail1">User Name</label>
                                        <input class="form-control" type="text" name="username" id="example-text-input"> 
                                     </div>
                                     <div class="form-group col-sm-6">
@@ -161,11 +159,10 @@ if(isset($_POST['submit'] ))
                                        <label for="exampleInputPassword1">Confirm password</label>
                                        <input type="password" class="form-control" name="cpassword" id="exampleInputPassword2"> 
                                     </div>
-									 <div class="form-group col-sm-12">
+									         <div class="form-group col-sm-12">
                                        <label for="exampleTextarea">Delivery Address</label>
                                        <textarea class="form-control" id="exampleTextarea"  name="address" rows="3"></textarea>
                                     </div>
-                                   
                                  </div>
                                 
                                  <div class="row">
