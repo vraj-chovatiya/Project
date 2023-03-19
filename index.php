@@ -38,7 +38,7 @@ session_start();
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
                             <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a></li>
-                            <li class="nav-item"> <a class="nav-link active" href="about.php">About Us <span class="sr-only"></span></a> </li>
+                            <!-- <li class="nav-item"> <a class="nav-link active" href="about.php">About Us <span class="sr-only"></span></a> </li> -->
                             
 							<?php
 						if(empty($_SESSION["user_id"])) // if user is not login
@@ -241,8 +241,28 @@ session_start();
         <footer class="footer">
             <div class="container">
           <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3 payment-options color-gray">
+                    <div class="row"> 
+                                <div class="col-xs-12 col-sm-3   additional-info color-gray">
+                                    <h5>Addition informations</h5>
+                                   <p>Here you can use Row and Column to organize your footer content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eos.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 address color-gray fot-padding links">
+                                    <h5>Useful Links</h5>
+                                    <p><a href="./index.php">Home</a></p>
+                                    <p><a href="./restaurants.php">Restaurants</a></p>
+                                    <p><a href="./login.php">Login</a></p>
+                                    <p><a href="registration.php">Registration</a></p>
+                                    <!-- <h5>Phone: 75696969855</a></h5>  -->
+                                </div>
+                                <div class="col-xs-12 col-sm-3 address color-gray fot-padding">
+                                    <h5>Contacts</h5>
+                                    <p>102 Barthana Vesu, Surat.</p>
+                                    <p>foodfrenzy123@gmail.com</p>
+                                    <p>+91 9796953534</p>
+                                    <p>+91 9796953533</p>
+                                    <!-- <h5>Phone: 75696969855</a></h5>  -->
+                                </div>
+                                <div class="col-xs-12 col-sm-3 payment-options color-gray">
                             <h5>Payment Options</h5>
                             <ul>
                                 <li>
@@ -262,14 +282,6 @@ session_start();
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xs-12 col-sm-4 address color-gray">
-                                    <h5>Address</h5>
-                                    <p>1086 Stockert Hollow Road, Seattle</p>
-                                    <h5>Phone: 75696969855</a></h5> </div>
-                                <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                                    <h5>Addition informations</h5>
-                                   <p>Join thousands of other restaurants who benefit from having partnered with us.</p>
-                                </div>
                     </div>
                 </div>
           

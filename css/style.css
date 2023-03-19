@@ -1536,7 +1536,7 @@ footer h5 {
 footer p,
 footer,
 footer span {
-  font-weight: 300;
+  font-weight: 400;
   color: #9c9da5;
 }
 
@@ -1594,7 +1594,18 @@ footer li a {
     margin-bottom: 25px;
   }
 }
-
+.fot-padding p{
+  /* background: black; */
+  margin: 10px;
+  margin-left: 0px;
+  /* font-size: 1.2rem; */
+  font-weight: 400;
+  /* border: 2px solid black; */
+} 
+.footer .row .links a{
+  /* border: 2px solid black; */
+  color: #9c9da5;
+}
 /* ==========================
 *  Inner pages
 ============================*/

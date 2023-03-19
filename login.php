@@ -114,9 +114,10 @@ if(isset($_POST['submit']))
       <input type="password" placeholder="Password" name="password"/>
       <input type="submit" id="buttn" name="submit" value="Login" />
     </form>
-  </div>
+    <a style="font-size:14px;" class="adminlink" href="./admin/index.php" target="_blank">Admin Login</a>
+</div>
   
-  <div class="cta">Not registered?<a href="registration.php" style="color:#5c4ac7;"> Create an account</a></div>
+<div class="cta">Not registered?<a href="registration.php" style="color:#5c4ac7;"> Create an account</a></div>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
@@ -134,8 +135,28 @@ if(isset($_POST['submit']))
 
              
                 <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3 payment-options color-gray">
+                <div class="row"> 
+                                <div class="col-xs-12 col-sm-3   additional-info color-gray">
+                                    <h5>Addition informations</h5>
+                                   <p>Here you can use Row and Column to organize your footer content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eos.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 address color-gray fot-padding links">
+                                    <h5>Useful Links</h5>
+                                    <p><a href="./index.php">Home</a></p>
+                                    <p><a href="./restaurants.php">Restaurants</a></p>
+                                    <p><a href="./login.php">Login</a></p>
+                                    <p><a href="registration.php">Registration</a></p>
+                                    <!-- <h5>Phone: 75696969855</a></h5>  -->
+                                </div>
+                                <div class="col-xs-12 col-sm-3 address color-gray fot-padding">
+                                    <h5>Contacts</h5>
+                                    <p>102 Barthana Vesu, Surat.</p>
+                                    <p>foodfrenzy123@gmail.com</p>
+                                    <p>+91 9796953534</p>
+                                    <p>+91 9796953533</p>
+                                    <!-- <h5>Phone: 75696969855</a></h5>  -->
+                                </div>
+                                <div class="col-xs-12 col-sm-3 payment-options color-gray">
                             <h5>Payment Options</h5>
                             <ul>
                                 <li>
@@ -154,14 +175,6 @@ if(isset($_POST['submit']))
                                     <a href="#"> <img src="images/bitcoin.png" alt="Bitcoin"> </a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 address color-gray">
-                            <h5>Address</h5>
-                            <p>1086 Stockert Hollow Road, Seattle</p>
-                                    <h5>Phone: 75696969855</a></h5> </div>
-                        <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                            <h5>Addition informations</h5>
-                           <p>Join thousands of other restaurants who benefit from having partnered with us.</p>
                         </div>
                     </div>
                 </div>
