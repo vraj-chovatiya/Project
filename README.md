@@ -24,6 +24,8 @@
   <li>Create a database and import the `onlinefoodphp.sql` file.</li>
   <li>Edit the `config.php` file to enter your database connection details.</li>
   <li>Start your web server and navigate to the `index.php` file in your browser.</li>
-</ol>
+</ol><br>
+<h2>usage</h2>
+<p>To use the system, simply browse the list of restaurants, select a restaurant, and view their menu. Once you have found the food you want to order, click on the "Add to Cart" button. You can continue adding items to your cart until you are ready to checkout. To checkout, click on the "Checkout" button. click on the "Submit Order" button. Your order will be placed and you will receive a confirmation email.</p>
   
  
